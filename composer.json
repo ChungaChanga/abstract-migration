@@ -1,0 +1,19 @@
+{
+    "name": "chungachanga/abstract-migration",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^10.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chungachanga\\AbstractMigration\\": "src/",
+            "Chungachanga\\AbstractMigration\\Test\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrey B.",
+            "email": "aatuline@gmail.com"
+        }
+    ]
+}
