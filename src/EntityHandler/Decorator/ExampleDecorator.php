@@ -2,11 +2,11 @@
 
 namespace Chungachanga\AbstractMigration\EntityHandler\Decorator;
 
-use SplObjectStorage;
+use Chungachanga\AbstractMigration\Collection\EntityCollectionInterface;
 
 class ExampleDecorator extends BaseDecorator
 {
-    public function handle(SplObjectStorage $entities)
+    public function handle(EntityCollectionInterface $entities)
     {
         parent::handle($entities);
     }

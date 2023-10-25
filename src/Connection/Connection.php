@@ -2,6 +2,7 @@
 
 namespace Chungachanga\AbstractMigration\Connection;
 
+use Chungachanga\AbstractMigration\Connector\ConnectorInterface;
 use Chungachanga\AbstractMigration\Connector\ConnectorReaderInterface;
 use Chungachanga\AbstractMigration\Connector\ConnectorWriterInterface;
 use Exception;
@@ -26,9 +27,9 @@ class Connection implements ConnectionInterface
         return $this->destinationConnector;
     }
 
-    private function validateType(
-        ConnectorReaderInterface $sourceConnector,
-        ConnectorWriterInterface $destinationConnector
+    public function validateType(
+        ConnectorInterface $sourceConnector,
+        ConnectorInterface $destinationConnector
     )
     {
         if ($sourceConnector->getType() !== $destinationConnector->getType()) {

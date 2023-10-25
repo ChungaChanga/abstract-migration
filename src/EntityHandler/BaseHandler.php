@@ -1,11 +1,11 @@
 <?php
 
 namespace Chungachanga\AbstractMigration\EntityHandler;
-use SplObjectStorage;
+use Chungachanga\AbstractMigration\Collection\EntityCollectionInterface;
 
 class BaseHandler implements HandlerInterface
 {
-    public function handle(SplObjectStorage $entities)
+    public function handle(EntityCollectionInterface $entities)
     {
 
     }

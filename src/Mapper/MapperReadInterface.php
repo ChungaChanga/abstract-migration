@@ -2,9 +2,8 @@
 
 namespace Chungachanga\AbstractMigration\Mapper;
 
-use Chungachanga\AbstractMigration\Entity\EntityInterface;
 
 interface MapperReadInterface
 {
-    public function fromState(array $state): EntityInterface;
+    public function fromState(array $state);
 }

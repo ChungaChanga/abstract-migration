@@ -2,9 +2,8 @@
 
 namespace Chungachanga\AbstractMigration\Example\Entity;
 
-use Chungachanga\AbstractMigration\Entity\EntityInterface;
 
-class Customer implements EntityInterface
+class Customer
 {
     const TYPE = 'customer';
     private $id;
