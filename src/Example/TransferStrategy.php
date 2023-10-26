@@ -1,11 +1,12 @@
 <?php
 
-namespace Chungachanga\AbstractMigration\Migration;
+namespace Chungachanga\AbstractMigration\Example;
 
 use Chungachanga\AbstractMigration\Collection\EntityCollectionInterface;
 use Chungachanga\AbstractMigration\Connector\ConnectorWriterInterface;
+use Chungachanga\AbstractMigration\Migration\TransferStrategyInterface;
 
-class TransferStrategy
+class TransferStrategy implements TransferStrategyInterface
 {
     public function __construct(
         private ConnectorWriterInterface $destinationConnector,

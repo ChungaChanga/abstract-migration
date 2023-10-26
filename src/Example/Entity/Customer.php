@@ -5,7 +5,6 @@ namespace Chungachanga\AbstractMigration\Example\Entity;
 
 class Customer
 {
-    const TYPE = 'customer';
     private $id;
     private $firstName;
     private $lastName;

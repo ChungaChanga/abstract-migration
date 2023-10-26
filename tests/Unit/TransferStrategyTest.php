@@ -3,7 +3,7 @@
 namespace Chungachanga\AbstractMigration\Test\Unit;
 
 use Chungachanga\AbstractMigration\Example\Connector\Memory\Connector\CustomerConnector;
-use Chungachanga\AbstractMigration\Migration\TransferStrategy;
+use Chungachanga\AbstractMigration\Example\TransferStrategy;
 use Chungachanga\AbstractMigration\Test\UnitBase;
 
 class TransferStrategyTest extends UnitBase

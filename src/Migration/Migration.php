@@ -4,9 +4,8 @@ namespace Chungachanga\AbstractMigration\Migration;
 
 use Chungachanga\AbstractMigration\Collection\EntityCollectionInterface;
 use Chungachanga\AbstractMigration\Connection\ConnectionInterface;
-use Chungachanga\AbstractMigration\Repository\RepositoryReadInterface;
 use Chungachanga\AbstractMigration\EntityHandler\HandlerInterface;
-use InvalidArgumentException;
+use Chungachanga\AbstractMigration\Repository\RepositoryReadInterface;
 use Iterator;
 
 class Migration
@@ -14,7 +13,7 @@ class Migration
     public function __construct(
         private ConnectionInterface $connection,
         private HandlerInterface $entityHandler,
-        private TransferStrategy $strategy,
+        private TransferStrategyInterface $strategy,
         private EntityCollectionInterface $entityCollection,
         private MigrationState $state
     )
