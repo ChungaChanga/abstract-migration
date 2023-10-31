@@ -16,8 +16,5 @@
             "name": "Andrey B.",
             "email": "aatuline@gmail.com"
         }
-    ],
-    "require": {
-        "symfony/http-client-contracts": "^3.3"
-    }
+    ]
 }
