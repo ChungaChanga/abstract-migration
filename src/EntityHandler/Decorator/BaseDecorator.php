@@ -2,7 +2,6 @@
 
 namespace Chungachanga\AbstractMigration\EntityHandler\Decorator;
 
-use Chungachanga\AbstractMigration\Collection\EntityCollectionInterface;
 use Chungachanga\AbstractMigration\EntityHandler\HandlerInterface;
 
 class BaseDecorator implements HandlerInterface
@@ -12,7 +11,7 @@ class BaseDecorator implements HandlerInterface
     {
         $this->handler = $handler;
     }
-    public function handle(EntityCollectionInterface $entities)
+    public function handle($entities)
     {
         $this->handler->handle($entities);
     }

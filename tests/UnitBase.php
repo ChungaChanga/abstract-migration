@@ -2,11 +2,10 @@
 
 namespace Chungachanga\AbstractMigration\Test;
 
-use Chungachanga\AbstractMigration\Collection\EntityCollectionInterface;
 use Chungachanga\AbstractMigration\Example\Entity\Customer;
 use Chungachanga\AbstractMigration\Example\EntityCollection;
 use PHPUnit\Framework\TestCase;
-use SplObjectStorage;
+
 abstract class UnitBase extends TestCase
 {
     const REPOSITORY_SEVEN_VALUES = [
@@ -31,7 +30,7 @@ abstract class UnitBase extends TestCase
         ['id' => 9],
     ];
 
-    protected static function createCustomerEntitiesCollection(array $states): EntityCollectionInterface
+    protected static function createCustomerEntitiesCollection(array $states)
     {
         $entities = new EntityCollection();
         foreach ($states as $v) {

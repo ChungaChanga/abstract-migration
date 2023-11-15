@@ -2,11 +2,10 @@
 
 namespace Chungachanga\AbstractMigration\EntityHandler\Decorator;
 
-use Chungachanga\AbstractMigration\Collection\EntityCollectionInterface;
 
 class ExampleDecorator extends BaseDecorator
 {
-    public function handle(EntityCollectionInterface $entities)
+    public function handle($entities)
     {
         parent::handle($entities);
     }

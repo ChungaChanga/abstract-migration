@@ -2,9 +2,9 @@
 
 namespace Chungachanga\AbstractMigration\Example;
 
-use Chungachanga\AbstractMigration\Collection\EntityCollectionInterface;
 use SplObjectStorage;
-class EntityCollection extends SplObjectStorage implements EntityCollectionInterface
+
+class EntityCollection extends SplObjectStorage
 {
     public function add($entity)
     {

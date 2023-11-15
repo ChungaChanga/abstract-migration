@@ -2,7 +2,6 @@
 
 namespace Chungachanga\AbstractMigration\Example;
 
-use Chungachanga\AbstractMigration\Collection\EntityCollectionInterface;
 use Chungachanga\AbstractMigration\Connector\ConnectorWriterInterface;
 use Chungachanga\AbstractMigration\Migration\TransferStrategyInterface;
 
@@ -16,10 +15,10 @@ class TransferStrategy implements TransferStrategyInterface
 
     /**
      * Unsafe operation (write to destination repository)
-     * @param EntityCollectionInterface $entities
+     * @param $entities
      * @return void
      */
-    public function transfer(EntityCollectionInterface $entities)
+    public function transfer($entities)
     {
         $destinationEntitiesState = [];
         foreach ($entities as $entity) {
