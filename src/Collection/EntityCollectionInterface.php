@@ -2,9 +2,7 @@
 
 namespace Chungachanga\AbstractMigration\Collection;
 
-use Iterator;
-
-interface EntityCollectionInterface extends Iterator
+interface EntityCollectionInterface
 {
     public function add($entity);
     public function clear();
