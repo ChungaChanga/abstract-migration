@@ -31,6 +31,6 @@ class CustomerConnector implements ConnectorFullInterface
 
     public function getType(): string
     {
-        return Customer::TYPE;
+        return 'customer';//fixme
     }
 }
