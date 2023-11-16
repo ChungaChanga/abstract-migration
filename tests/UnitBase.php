@@ -30,17 +30,6 @@ abstract class UnitBase extends TestCase
         ['id' => 9],
     ];
 
-    protected static function createCustomerEntitiesCollection(array $states)
-    {
-        $entities = new EntityCollection();
-        foreach ($states as $v) {
-            $customer = new Customer();
-            $customer->setId($v['id']);
-            $entities->add($customer);
-        }
-        return $entities;
-    }
-
     protected static function createSelfExpandingRepository()
     {
 
