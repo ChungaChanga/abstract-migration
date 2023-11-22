@@ -4,5 +4,5 @@ namespace Chungachanga\AbstractMigration\Repository;
 
 interface RepositoryWriteInterface
 {
-    public function create($entity);
+    public function create(array $entities);
 }
