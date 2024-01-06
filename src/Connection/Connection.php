@@ -3,26 +3,26 @@
 namespace Chungachanga\AbstractMigration\Connection;
 
 use Chungachanga\AbstractMigration\Connector\ConnectorInterface;
-use Chungachanga\AbstractMigration\Connector\ConnectorReaderInterface;
-use Chungachanga\AbstractMigration\Connector\ConnectorWriterInterface;
+use Chungachanga\AbstractMigration\Connector\ConnectorReadInterface;
+use Chungachanga\AbstractMigration\Connector\ConnectorWriteInterface;
 use Exception;
 
 class Connection implements ConnectionInterface
 {
     public function __construct(
-        private ConnectorReaderInterface $sourceConnector,
-        private ConnectorWriterInterface $destinationConnector,
+        private ConnectorReadInterface  $sourceConnector,
+        private ConnectorWriteInterface $destinationConnector,
     )
     {
         $this->validateType($this->sourceConnector, $this->destinationConnector);
     }
 
-    public function getSourceConnector(): ConnectorReaderInterface
+    public function getSourceConnector(): ConnectorReadInterface
     {
         return $this->sourceConnector;
     }
 
-    public function getDestinationConnector(): ConnectorWriterInterface
+    public function getDestinationConnector(): ConnectorWriteInterface
     {
         return $this->destinationConnector;
     }

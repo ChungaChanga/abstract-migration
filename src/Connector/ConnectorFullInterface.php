@@ -6,8 +6,7 @@ namespace Chungachanga\AbstractMigration\Connector;
 use Chungachanga\AbstractMigration\Mapper\MapperFullInterface;
 use Chungachanga\AbstractMigration\Repository\RepositoryFullInterface;
 
-interface ConnectorFullInterface extends ConnectorReaderInterface, ConnectorWriterInterface
+interface ConnectorFullInterface extends ConnectorReadInterface, ConnectorWriteInterface
 {
-    public function getRepository(): RepositoryFullInterface;
-    public function getMapper(): MapperFullInterface;
+
 }
