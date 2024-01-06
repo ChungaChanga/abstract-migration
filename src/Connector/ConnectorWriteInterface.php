@@ -4,5 +4,5 @@ namespace Chungachanga\AbstractMigration\Connector;
 
 interface ConnectorWriteInterface extends ConnectorInterface
 {
-    public function getWritingIterator(\ArrayAccess $entities): \Iterator;
+    public function create($entity);
 }

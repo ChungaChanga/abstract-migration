@@ -9,10 +9,5 @@ use Chungachanga\AbstractMigration\Entity\EntityTypeInterface;
 
 interface ConnectionInterface
 {
-    public function getSourceConnector(): ConnectorReadInterface;
-    public function getDestinationConnector(): ConnectorWriteInterface;
-    public function validateType(
-        ConnectorInterface $connector,
-        ConnectorInterface $connector1,
-    );
+    public function transfer();
 }

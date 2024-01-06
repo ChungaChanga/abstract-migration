@@ -8,5 +8,4 @@ use Chungachanga\AbstractMigration\Repository\RepositoryFullInterface;
 
 interface ConnectorInterface
 {
-   // public function getType(): string;
 }
