@@ -9,4 +9,5 @@ interface ConnectorFactoryFullInterface extends ConnectorFactoryReadInterface, C
 {
     public function createRepository(): RepositoryFullInterface;
     public function createMapper(): MapperFullInterface;
+    public function createIterator(int $startPage, int $pageSize): \Iterator;
 }
